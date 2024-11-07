@@ -1,5 +1,5 @@
 {
-	"name": "@void/scripts",
+	"name": "@void/website",
 	"module": "src/index.js",
 	"type": "module",
 	"scripts": {
