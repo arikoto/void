@@ -1,0 +1,15 @@
+{
+	"name": "@void/void",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"fmt": "bun --filter '*' fmt",
+		"lint": "bun --filter '*' lint"
+	},
+	"workspaces": ["app/*", "packages/*"],
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@types/bun": "latest"
+	}
+}

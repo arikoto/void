@@ -1,0 +1,19 @@
+{
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": ["biomejs.biome", "ms-azuretools.vscode-docker"],
+			"settings": {
+				"editor.defaultFormatter": "biomejs.biome",
+				"editor.formatOnSave": true,
+				"files.autoSave": "onFocusChange",
+				"files.eol": "\n",
+				"files.insertFinalNewline": true,
+				"files.trimFinalNewlines": true
+			}
+		}
+	},
+	"postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}"
+}
