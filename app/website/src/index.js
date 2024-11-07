@@ -1,4 +1,4 @@
-import { serve } from 'bun'
+import { env, serve } from 'bun'
 
 const createStaticResponse = async (filePath, contentType) => {
 	const fileContent = await Bun.file(filePath).bytes()
@@ -10,9 +10,9 @@ const createStaticResponse = async (filePath, contentType) => {
 }
 
 const server = serve({
+	port: env.PORT || 8888,
 	static: {
 		'/': await createStaticResponse('./public/index.html', 'text/html'),
-		'/index.html': await createStaticResponse('./public/index.html', 'text/html'),
 		'/css/footer.css': await createStaticResponse('./public/css/footer.css', 'text/css'),
 		'/css/header.css': await createStaticResponse('./public/css/header.css', 'text/css'),
 		'/css/html5-boilerplate.css': await createStaticResponse('./public/css/html5-boilerplate.css', 'text/css'),
@@ -32,4 +32,4 @@ const server = serve({
 	},
 })
 
-console.log('Server running at http://localhost:3000')
+console.log(`Server running at ${server.url}`)
