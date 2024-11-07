@@ -1,13 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>...</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Tiny Alert</title>
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="images/logo-alert4sud.svg">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/html5-boilerplate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-	<header></header>
-	<main></main>
-	<footer></footer>
+    <header>
+        <nav class="container-header">
+            <a href="https://alert4sud.fr" class="logo-header">
+                <img src="images/logo-alert4sud.svg" alt="code4sud logo">
+            </a>
+            <div class="menu-container">
+                <button id="menuToggle" class="menu-burger">
+                        <img src="images/burger-icon.svg" alt="menu burger">
+                    </button>
+                <div id="drawer" class="drawer hidden">
+                    <button id="closeDrawer" class="close-button">
+                            <svg class="close-icon" width="40" height="40" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                        </button>
+                    <div class="drawer-content">
+                        <ul id="menuList" class="menu-list"></ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="main">
+        
+        <section class="container">
+            <div class="left-section">
+            <h1>Bienvenue sur Tiny Alert !</h1>
+            <p>Rejoignez une expérience unique et immersive. Tiny Alert est un jeu sur les risques majeurs. Trouvez un moyen de s'en sortir en cas de danger ! Faites de votre mieux pour atteindre le top du classement !</p>
+                <div class="buttons">                    <button class="secondary">Leaderboard</button>
+                <button>Jouer</button>
+            </div>
+        </div>        
+        <div class="right-section">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Vidéo d'exemple" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </section>
+        
+        <section id="about" class="about">
+            <h2>A propos</h2>
+            
+        </section>
+        
+        <section id="info" class="info">
+            <h2>S'informer</h2>
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/oM7SRcj_Utg?si=LkVScXVxQ40xSl4M" 
+            title="Vidéo YouTube"
+            frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+        </section>
+        
+        <section id="company" class="company">
+            <h2>Entreprise</h2>
+        </section>
+    </main>
+
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/header.js"></script>
 </body>
+
+<footer>
+    <div class="container-footer">
+        <div class="footer-left">
+            <a href="/mentions-legales">Mentions légales</a>
+        </div>
+        <div class="logo-footer">
+            <a href="#" class="logo-footer">
+                <img src="images/logo-alert4sud.svg" alt="code4sud logo">
+            </a>
+            <span class="footer-text">© 2024 Alert4sud. Tous droits réservés.</span>
+        </div>
+        <div class="footer-right">
+            <a href="/contact">Nous contacter</a>
+        </div>
+    </div>
+</footer>
+
+
 </html>
