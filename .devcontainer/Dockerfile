@@ -4,4 +4,4 @@ RUN apk add --no-cache \
 git \
 docker
 
-CMD [ "bun", "install", "--frozen-lockfile" ]
+CMD [ "bun", "install --frozen-lockfile" ]
