@@ -4,6 +4,7 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
+		"dev": "bun --filter @void/website dev",
 		"fmt": "bun --filter '*' fmt",
 		"lint": "bun --filter '*' lint"
 	},
