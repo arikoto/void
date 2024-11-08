@@ -50,7 +50,7 @@ jobs:
           IMG_NAME: ghcr.io/code4sud/alerte4sud
         with:
           context: ./
-          file: ./packages/docker
+          file: Dockefile
           push: true
           tags: ghcr.io/code4sud/${{ needs.get-repo-name.outputs.repo_name }}:dev-${{ needs.get-repo-name.outputs.timestamp }}
           cache-from: type=gha

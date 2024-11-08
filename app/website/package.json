@@ -3,7 +3,7 @@
 	"module": "src/index.js",
 	"type": "module",
 	"scripts": {
-		"dev": "bun -b src/index.js",
+		"dev": "bun -b .",
 		"fmt": "biome format --write",
 		"lint": "biome lint --write"
 	}
