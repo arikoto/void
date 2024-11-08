@@ -13,7 +13,6 @@ const server = serve({
 	port: env.PORT || 8888,
 	static: {
 		'/': await createStaticResponse('./public/index.html', 'text/html'),
-		'/leaderboard': await createStaticResponse('./public/leaderboard.html', 'text/html'),
 		'/css/meta.css': await createStaticResponse('./public/css/meta.css', 'text/css'),
 		'/css/footer.css': await createStaticResponse('./public/css/footer.css', 'text/css'),
 		'/css/header.css': await createStaticResponse('./public/css/header.css', 'text/css'),
